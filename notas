@@ -1,4 +1,7 @@
-develop
+querys
 
 python manage.py runserver --settings=settings.local
+python manage.py makemigrations --settings=settings.local
 python manage.py migrate --settings=settings.local
+python manage.py shell --settings=settings.local
+Link.objects.create(url='https://twitter.com/jonatasbaldin/', description='The Jonatas Baldin Twitter')
